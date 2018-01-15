@@ -1,0 +1,31 @@
+.example-form {
+  min-width: 200px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+#search{
+    min-width: 100%;
+}
+.container{
+    background: white;
+    margin: 2% auto;
+    width:100%;
+    border-radius: 0.5em;
+    padding: 5%;
+}
+
+
+app-detail {
+    width:100%;
+}
+
+input.ng-untouched{
+    border-color:rgba(192, 178, 175, 0.123) !important;
+}
+/* input.ng-touched.ng-invalid{
+    border-color: tomato;
+} */

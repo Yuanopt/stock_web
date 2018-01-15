@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+    background: url(http://cs-server.usc.edu:45678/hw/hw8/images/background.png);
+    text-align: center;
+}
+
+
+a#selected.nav-link.active{
+    color: #fff !important;
+    background-color: #007bff !important;
+}
+a#News.nav-link.active{
+    color: #fff !important;
+    background-color: #007bff !important;
+}
+a#History.nav-link.active{
+    color: #fff !important;
+    background-color: #007bff !important;
+}

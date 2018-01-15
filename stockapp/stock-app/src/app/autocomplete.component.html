@@ -1,0 +1,33 @@
+<div class = "container">
+    <h3>Stock Market Search</h3>
+    <div class="row">
+            <div class="col-md-3" style="text-align:left; padding: 1em"><strong>Enter stock Ticker Symbol:</strong><span style="color:red">*</span></div>
+            <div class="col-md-6">
+                <div style="padding-top:1em">
+                <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                    <input id="search" [(ngModel)] = "symbol" (keyup) = "onKeyUp()" type="text" placeholder="e.g. AAPL" aria-label="Number"  matInput [formControl]="myControl" 
+                    [matAutocomplete]="auto" (focus)="focusevent()" [style.border]="colorcheck()?'2px solid red':'1px solid gray'" #search required>
+                    <mat-autocomplete #auto="matAutocomplete" [displayWith]="getDisplayFn()">
+                    <mat-option *ngFor="let option of options"[value]="option">
+                    {{ option }}
+                    </mat-option>
+                    </mat-autocomplete>
+                    </mat-form-field>
+                </form>
+                </div>
+                <div>
+                    <span style="text-align:left"><p *ngIf="(focused==1)&&(this.symbol.trim()==0)">Please enter as symbol</p></span>
+                </div>
+               
+            </div>
+            <div class="col-md-3" style="text-align:left;padding:1em">
+                <span>
+                <button class="btn btn-primary" (click) = "onClick()" [disabled]="checkSymbol()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Get Quote</button>
+                <button type="button" class="btn btn-default"(click)="clearsymbol()"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>Clear</button>
+                </span>
+            </div>
+        </div>
+</div>
+<hr>
+<stock-detail [stock]="stock" [SMA]="SMA" [EMA]="EMA" [STOCH]="STOCH" [ADX] = "ADX" [CCI]="CCI" [MACD]="MACD" [BBANDS]="BBANDS" [RSI]="RSI" [news]="news" [showdetails]="showdetails" [promisesymbol]="promisesymbol"[research]="research" (searchagain)="searchagain($event)"></stock-detail>

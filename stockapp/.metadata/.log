@@ -1,0 +1,24 @@
+!SESSION 2017-11-07 10:17:27.622 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-008
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/zyy/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/zyy/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 0 2017-11-07 10:17:58.363
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-11-07 10:17:58.363
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-11-07 10:18:01.217
+!MESSAGE Darkest Dark theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-11-07 10:18:02.319
+!MESSAGE Darkest Dark has archived current color configurations to alternate preferences - will be restored when switching out of Darkest Dark theme
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-11-07 10:21:11.612
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-11-07 10:21:11.626
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time

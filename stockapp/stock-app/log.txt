@@ -1,0 +1,59 @@
+14.11.2017
+
+1. stock 加入favorite时的顺序的问题，用localStorage会按照字母顺序而不是加入顺序。
+2. autorefresh insetinterval问题 setinterval 匿名函数 和 clearinterval（已经解决）
+3. 点击favoritelist里的symbol,需要下载数据(已经解决)
+4. fb要log in 和 log out（要试过）
+
+剩余问题：
+promise 处理 indicator 数据的时候，没有成功
+
+stock.symbol == promisesymbol count == 0 的时候，执行一次，然后 count++;
+stock.symbol != promisesymbol 时候count 重新变为0;
+
+重新搜索的时候,research 变回 1， 搜索结束的时候 research 变为0
+
+问题：
+重新搜索之后，history 和 news 需要变
+
+问题：
+点击favoritelist里调用的重新搜索（已经解决，用emitter）
+
+分情况
+1. 第一次搜索，即tableinfo 错误，返回stock.symbol = error ; promisesymbol = MSFT
+table需要显示error, price需要显示error table和price应该用一样的判断
+过程应该是先probar然后在error
+
+重新搜索
+
+FB 板块遇到问题（已经解决）
+1. 本地调用出现问题： 需要在develop那里加上应用网站
+2. httpclient 去读highchart数据问题，需要加header, 并且设置content-type, 另外因为httpclient的默认接收类型是json,所以要加respensetype:text。
+toggle 渲染问题（已经解决）
+
+Toggle 问题（已经解决）
+
+indicator 在下载过程中遭到点击，就显示空的问题要处理一下。
+
+还需解决：
+error的逻辑要改一下，输入错误的股票要显示error(带定)
+volume 格式要改（搞定）
+godetails 条件要改，没有search股票的时候就不能切(搞定)
+FB 按钮的分享条件要改(解决）
+EDT 和 EST （解决）
+
+
+css:
+
+1. table 用striped 解决 滑动条解决
+2. tab 用了 !important 解决
+
+
+favoritelist 顺序问题（搞定）
+借助localstorage 存储（搞定）
+timezone 那里没有用过（搞定）
+EST 和 EDT 针对新闻(搞定)
+
+gofavorite 函数(解决)
+
+this.favorite 要等于local里的东西(解决)

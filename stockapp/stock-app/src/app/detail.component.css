@@ -1,0 +1,54 @@
+
+chart {
+    display: block; 
+}
+ul li{  
+    list-style-type:none;  
+    list-style-position: outside;
+    padding:0;
+    }  
+#articletitle{
+    font-size: 1.5em;
+    color: rgb(128, 163, 197);
+}
+ul li div {
+    background-color:rgb(239, 239, 239);
+    text-align: left; 
+    margin-bottom: 1em;   
+}
+
+#favorite{
+    padding: 1.5em;
+    text-align: left;
+}
+
+.panel-heading{
+    padding: 1.5em;
+}
+td{
+    text-align: left;
+}
+.select{
+    text-align:left;
+    padding-bottom:5%; 
+}
+select{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#favoritesymbol{
+    color:blue;
+}
+#favoritesymbol:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container{
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 5%;
+    margin: 2% auto;
+    background-color: white;
+}

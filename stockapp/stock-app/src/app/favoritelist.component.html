@@ -1,0 +1,43 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Favorite List
+        <span style="float: right; margin-bottom: 10px">
+            <span>Automatic Refresh:
+            <input type="checkbox" checked data-toggle="toggle">
+            </span>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"aria-hidden="true"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"aria-hidden="true" ></span></button>
+        </span>
+    </div>
+    <div class="panel-body">
+        <div class="select">
+        <span>Sort by
+                <select class="form-control" style="width:150px; display:inline-block" >
+                      <option>Default</option>
+                      <option>Symbol</option>
+                      <option>Price</option>
+                      <option>Change</option>
+                      <option>Change Percent</option>
+                      <option>Volume</option>
+                </select></span>
+        <span>Order
+          <select class="form-control" style="width:150px; display:inline-block">
+                <option>Ascending</option>
+                <option>Descending</option>
+          </select>
+        </span>
+        </div>
+        <div>
+            <table>
+                <tr><th>Symbol</th><th>Stock Price</th><th>Change(Change Percent)</th><th>Volume</th></tr>
+                <tr><td>AAPL</td><td>153.28</td><td>-0.95(-0.62%)</td><td>21895592</td>
+                    <td><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash" ></span></button></td></tr>
+            </table>
+        </div>
+    </div>
+
+<script>
+$(function() {
+    $('#toggle-one').bootstrapToggle();
+})
+</script>

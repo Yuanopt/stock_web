@@ -1,0 +1,20 @@
+.panel-heading{
+    text-align: left;
+    padding: 20px;
+}
+table{
+    width:100%
+}
+td{
+    text-align: left;
+}
+span{
+    text-align: left;
+}
+.select{
+    text-align:left;
+}
+select{
+    margin-left: 5%;
+    margin-right: 10%;
+}
